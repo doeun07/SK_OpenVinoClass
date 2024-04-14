@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>랭킹 보기</title>
+    <link
+      rel="stylesheet"
+      href="../static/bootstrap-5.3.3-dist/css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename = 'style.css')}}"
+    />
+  </head>
+  <body>
+    <div class="container out">
+        <div class="container">
+            <h1>Ranking</h1>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">순위</th>
+                  <th scope="col">닉네임</th>
+                  <th scope="col">제시어</th>
+                  <th scope="col">점수</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table-primary">
+                  <th scope="row">1</th>
+                  <td>나길동</td>
+                  <td>자동차</td>
+                  <td>100</td>
+                </tr>
+                <tr class="table-primary">
+                  <th scope="row">2</th>
+                  <td>다길동</td>
+                  <td>나길동</td>
+                  <td>98</td>
+                </tr>
+                <tr class="table-primary">
+                  <th scope="row">3</th>
+                  <td>라길동</td>
+                  <td>라디오</td>
+                  <td>96</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>마길동</td>
+                  <td>전봇대</td>
+                  <td>82</td>
+                </tr>
+                <tr class="table-danger">
+                  <th scope="row">5</th>
+                  <td>바길동</td>
+                  <td>홍길동</td>
+                  <td>0</td>
+                </tr>
+              </tbody>
+            </table>
+            <a href="./">
+                <button type="button" class="btn btn-primary">메인화면으로</button>
+            </a>
+        </div>
+    </div>
+  </body>
+</html>

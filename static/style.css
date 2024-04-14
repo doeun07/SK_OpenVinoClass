@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+}
+
+.container {
+    text-align: center;
+}
+.out {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#gameStartBtn {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#webcamTest {
+    width: 400px;
+    height: 479px;
+    background-color: gray;
+    border: solid 1px white;
+    margin: 20px auto;
+}
+
+#problem {
+    text-align: center;
+}

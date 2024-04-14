@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>감히 너 따위가 이 문제를 풀 수 있을거 같니</title>
+    <link rel="stylesheet" href="../static/bootstrap-5.3.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'style.css')}}">
+</head>
+<body>
+    <div class="container out">
+        <div>
+            <div id="problem">
+                <h4>문제</h4>
+                <h1>123 + 456 = ?</h1>
+                <h2>3</h2>
+            </div><br>
+            <div>
+                <div id="webcamTest"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../static/jquery-3.7.1.min.js"></script>
+<script src="../static/scrip.js"></script>
+<script>
+    createProblem();
+
+    setInterval(() => {
+        updatePoseImg();
+    }, 300);
+
+    setInterval(() => {
+        saveImage();
+    }, 1000);
+</script>
+</html>
